@@ -55,6 +55,8 @@ class BookmarkScreen : Fragment(R.layout.bookmark_screen) {
 
     }
 
+    // comment 
+
     override fun onResume() {
         super.onResume()
         adapter.submitList(AppRepository.getBookMarkedQuotes())
