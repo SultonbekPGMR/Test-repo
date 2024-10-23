@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+
+    android:background="@drawable/author_container_back"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintDimensionRatio="1:1" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steve Jobs"
+        app:layout_constraintStart_toStartOf="@id/img"
+        app:layout_constraintEnd_toEndOf="@id/img"
+        android:fontFamily="@font/font_space_grotesk"
+        android:textColor="@color/very_light_green"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

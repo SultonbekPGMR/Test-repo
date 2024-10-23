@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:padding="1dp"
+      android:foreground="@drawable/background_selector_back"
+      android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/img"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:src="@drawable/wall_5"
+          app:layout_constraintStart_toStartOf="parent"
+          android:scaleType="centerCrop"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintDimensionRatio="2:2.5" />
+
+      <TextView
+          android:id="@+id/txt_quote"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/space_grotesk_regular"
+          android:letterSpacing="0.05"
+          android:shadowDx="2"
+          android:shadowDy="2"
+          android:shadowRadius="5"
+          android:shadowColor="@color/black"
+          android:textSize="22sp"
+          android:maxLines="4"
+          android:textStyle="bold"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:padding="8dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:gravity="center"
+          android:layout_margin="16dp"
+          android:textColor="@color/qc_light_green"
+          android:text="Life is like a coin. You can spend it any way you wish, but you only spend it once" />
+
+
+      <FrameLayout
+          android:layout_width="0dp"
+          android:background="@drawable/background_selector_back_selected"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_height="0dp"
+          android:id="@+id/container_mask_selected">
+
+
+
+          <ImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/check_img"/>
+
+      </FrameLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

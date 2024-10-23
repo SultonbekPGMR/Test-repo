@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Inspire</string>
+    <string name="share_using">Share using\n</string>
+    <string name="no_saved_bookmark">You haven\'t saved any items to your bookmarks. Start adding your favorite words by tapping the bookmark icon, and they\'ll appear here.</string>
+</resources>

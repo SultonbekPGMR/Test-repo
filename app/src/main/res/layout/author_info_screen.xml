@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#0A4948"
+    android:paddingTop="32dp"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="35dp"
+                android:layout_marginStart="12dp"
+                android:padding="4dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                app:tint="@color/qc_light_green"
+                android:layout_height="35dp"/>
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                android:src="@drawable/author_bruce_lee"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="32dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintDimensionRatio="1:1" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bruce Lee"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@id/img"
+                android:letterSpacing="0.03"
+                app:layout_constraintEnd_toEndOf="@id/img"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/very_light_green"
+                android:layout_marginBottom="16dp"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@id/img"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:padding="17sp"
+                android:textColor="@color/qc_light_green"
+                android:fontFamily="@font/font_space_grotesk"
+                android:justificationMode="inter_word"
+                android:text="Bruce Lee, born Lee Jun-fan on November 27, 1940, in San Francisco, California, was a martial artist, actor, and philosopher. He is widely regarded as one of the most influential martial artists of all time and a pop culture icon of the 20th century. Bruce Lee's philosophy of martial arts, known as Jeet Kune Do, emphasized flexibility, directness, and the integration of various fighting styles. His famous works include the films 'Enter the Dragon' and 'The Way of the Dragon,' which helped popularize martial arts in the West. Lee believed in the importance of self-expression, encouraging people to be like water, adapting to any situation. Beyond his physical prowess, he was known for his deep thoughts on life, personal growth, and the nature of reality. Bruce Lee’s impact on martial arts, cinema, and popular culture remains significant. He passed away on July 20, 1973, but his legacy continues to inspire martial artists and thinkers worldwide."
+                app:layout_constraintEnd_toEndOf="parent"
+
+
+                />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_details"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>
